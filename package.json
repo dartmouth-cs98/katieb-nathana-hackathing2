@@ -1,0 +1,16 @@
+{
+  "name": "katieb-nathana-hackathing2",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "repository": "https://github.com/dartmouth-cs98/katieb-nathana-hackathing2.git",
+  "author": "Katie Bernardez <katherine.o.bernardez.20@dartmouth.edu>",
+  "license": "MIT",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "devDependencies": {
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.10.1"
+  }
+}
