@@ -9,9 +9,20 @@ const useStyles = makeStyles({
   base: {
     padding: '2%',
   },
+  header: {
+    display: 'flex',
+    flexDirection: 'row',
+    width: '100%',
+    justifyContent: 'space-between',
+  },
   title: {
     color: '#448FFF',
+    paddingBottom: '20px',
+  },
+  profile: {
+    color: '#000000',
     paddingBottom: '30px',
+    alignSelf: 'center',
   },
 });
 
@@ -20,9 +31,14 @@ const App = () => {
 
   return (
     <div className={classes.base}>
-      <Typography variant="h3" className={classes.title}>
-        WhenW3Meet
-      </Typography>
+      <div className={classes.header}>
+        <Typography variant="h3" className={classes.title}>
+          WhenW3Meet
+        </Typography>
+        <Typography variant="subtitle1" className={classes.profile}>
+          Nathan Albrinck
+        </Typography>
+      </div>
       <Week />
     </div>
   );
