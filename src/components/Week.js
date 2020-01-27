@@ -18,11 +18,17 @@ const useStyles = makeStyles({
 const Week = () => {
   const classes = useStyles();
   const today = new Date();
+  const weekStart = new Date(today);
+  const weekEnd = new Date(today.getDate() + 6);
 
   return (
     <div>
-      <Typography className={classes.info}>
-        You are currently viewing...
+      <Typography className={classes.info} variant="h6">
+        {'You are currently viewing '}
+        {weekStart.toDateString().slice(0, -5)}
+        {' - '}
+        {weekEnd.toDateString().slice(0, -5)}
+        {' in Eastern Standard Time'}
       </Typography>
       <div className={classes.week}>
         <WeekDay day={today.getTime()} />
