@@ -23,6 +23,7 @@
           0,
           "DebuggerStatement"
         ],
-        "no-debugger": "warn"
+        "no-debugger": "warn",
+        "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
     }
 }
